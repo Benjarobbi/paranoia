@@ -63,8 +63,8 @@ if (typeof(tbParanoia) === "undefined") {
 					     'UTF8SMTPS', 'UTF8SMTPSA',
 					     'LMTPS', 'LMTPSA',
 					     'UTF8LMTPS', 'UTF8LMTPSA'];
-			var additionalSecureMethods = ['with ESMTP/TLS', 'with ESMTP (TLS encrypted)', 'version=TLS', 'using TLSv', 'over TLS secured channel']
-			var unknownMethods = ['IMAP', 'LMTP'];
+			var additionalSecureMethods = ['LMTP','spam-scanned','with ESMTP/TLS', 'with ESMTP (TLS encrypted)', 'version=TLS', 'using TLSv', 'over TLS secured channel']
+			var unknownMethods = ['IMAP'];
 
 			/* Regexp definition must stay in the loop - stupid JS won't match the same regexp twice */
 			var rcvdRegexp = /^.*from\s+([^ ]+)\s+.*by\s+([^ ]+)\s+.*with\s+([-A-Za-z0-9]+).*;.*$/g;
