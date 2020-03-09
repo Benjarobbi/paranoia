@@ -32,9 +32,9 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         
-        - name: Upload math result for job 2
-        uses: actions/upload-artifact@v1
-        with:
-          name: paranoiabuild
-          path: ../paranoia.xpi
+    - name: Upload math result for job 2
+      uses: actions/upload-artifact@v1
+      with:
+        name: paranoiabuild
+        path: ../paranoia.xpi
 
